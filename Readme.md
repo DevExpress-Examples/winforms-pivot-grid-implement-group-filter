@@ -1,3 +1,8 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Form1.cs](./CS/GroupFilter/Form1.cs) (VB: [Form1.vb](./VB/GroupFilter/Form1.vb))
+<!-- default file list end -->
 # How to Implement Group Filter for a PivotGridControl
 
 
