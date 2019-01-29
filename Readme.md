@@ -3,12 +3,8 @@
 
 * [Form1.cs](./CS/GroupFilter/Form1.cs) (VB: [Form1.vb](./VB/GroupFilter/Form1.vb))
 <!-- default file list end -->
-# How to Implement Group Filter for a PivotGridControl
+# How to Implement Group Filter in PivotGridControl
 
+This example demonstrates how to create group filters in PivotGridControl. 
 
-<p>This example demonstrates how to apply custom group filters to PivotGridControl data. </p><p>In this example, a filter type is defined by setting the <a href="http://documentation.devexpress.com/#Silverlight/DevExpressXtraPivotGridPivotGroupFilterValues_FilterTypetopic"><u>PivotGroupFilterValues.FilterType</u></a> property to <a href="http://documentation.devexpress.com/#CoreLibraries/DevExpressXtraPivotGridPivotFilterTypeEnumtopic"><u>PivotFilterType.Included</u></a>. To create and add group filter values to the <a href="http://documentation.devexpress.com/#Silverlight/DevExpressXtraPivotGridPivotGroupFilterValues_Valuestopic"><u>PivotGroupFilterValues.Values</u></a> and <a href="http://documentation.devexpress.com/#Silverlight/DevExpressXtraPivotGridPivotGroupFilterValue_ChildValuestopic"><u>PivotGroupFilterValue.ChildValues</u></a> collections the <a href="http://documentation.devexpress.com/#Silverlight/DevExpressXtraPivotGridPivotGroupFilterValuesCollection_Addtopic"><u>PivotGroupFilterValuesCollection.Add</u></a> method is used. </p><br />
-
-
-<br/>
-
-
+Set the [PivotGroupFilterValues.FilterType](http://docs.devexpress.com/WinForms/DevExpress.XtraPivotGrid.PivotGroupFilterValues.FilterType) property to the [PivotFilterType.Included](http://docs.devexpress.com/WinForms/DevExpress.XtraPivotGrid.PivotFilterType). Create filter values and add them to the [PivotGroupFilterValues.Values](DevExpress.XtraPivotGrid.PivotGroupFilterValues.Values) and [PivotGroupFilterValue.ChildValues](DevExpress.XtraPivotGrid.PivotGroupFilterValues.ChildValues) collections.
