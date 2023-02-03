@@ -10,7 +10,7 @@ This example demonstrates how to create group filters in the Pivot Grid.
 
 ![Pivot Grid](./images/pivotgrid.png)
 
-Set the [PivotGroupFilterValues.FilterType](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraPivotGrid.PivotGroupFilterValues.FilterType) property to the [PivotFilterType.Included](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraPivotGrid.PivotFilterType). Create filter values and add them to the [PivotGroupFilterValues.Values](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraPivotGrid.PivotGroupFilterValues.Values) and [PivotGroupFilterValue.ChildValues](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraPivotGrid.PivotGroupFilterValue.ChildValues) collections.
+Set the [PivotGroupFilterValues.FilterType](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraPivotGrid.PivotGroupFilterValues.FilterType) property to [PivotFilterType.Included](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraPivotGrid.PivotFilterType). Create filter values and add them to the [PivotGroupFilterValues.Values](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraPivotGrid.PivotGroupFilterValues.Values) and [PivotGroupFilterValue.ChildValues](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraPivotGrid.PivotGroupFilterValue.ChildValues) collections.
 
 ## Files to Reiew
 
