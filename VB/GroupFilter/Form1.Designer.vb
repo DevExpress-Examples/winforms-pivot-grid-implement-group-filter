@@ -24,7 +24,12 @@
 		''' </summary>
 		Private Sub InitializeComponent()
 			Me.components = New System.ComponentModel.Container()
+			Dim dataSourceColumnBinding1 As New DevExpress.XtraPivotGrid.DataSourceColumnBinding()
+			Dim dataSourceColumnBinding2 As New DevExpress.XtraPivotGrid.DataSourceColumnBinding()
 			Dim pivotGridGroup1 As New DevExpress.XtraPivotGrid.PivotGridGroup()
+			Dim dataSourceColumnBinding3 As New DevExpress.XtraPivotGrid.DataSourceColumnBinding()
+			Dim dataSourceColumnBinding4 As New DevExpress.XtraPivotGrid.DataSourceColumnBinding()
+			Dim dataSourceColumnBinding5 As New DevExpress.XtraPivotGrid.DataSourceColumnBinding()
 			Me.fieldOrderDate1 = New DevExpress.XtraPivotGrid.PivotGridField()
 			Me.fieldOrderDate = New DevExpress.XtraPivotGrid.PivotGridField()
 			Me.pivotGridControl1 = New DevExpress.XtraPivotGrid.PivotGridControl()
@@ -34,9 +39,9 @@
 			Me.fieldExtendedPrice1 = New DevExpress.XtraPivotGrid.PivotGridField()
 			Me.fieldCategoryName1 = New DevExpress.XtraPivotGrid.PivotGridField()
 			Me.salesPersonTableAdapter = New GroupFilter.nwindDataSetTableAdapters.SalesPersonTableAdapter()
-			DirectCast(Me.pivotGridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-			DirectCast(Me.salesPersonBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-			DirectCast(Me.nwindDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+			CType(Me.pivotGridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+			CType(Me.salesPersonBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+			CType(Me.nwindDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
 			Me.SuspendLayout()
 			' 
 			' fieldOrderDate1
@@ -44,20 +49,20 @@
 			Me.fieldOrderDate1.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea
 			Me.fieldOrderDate1.AreaIndex = 0
 			Me.fieldOrderDate1.Caption = "Year"
-			Me.fieldOrderDate1.FieldName = "OrderDate"
-			Me.fieldOrderDate1.GroupInterval = DevExpress.XtraPivotGrid.PivotGroupInterval.DateYear
+			dataSourceColumnBinding1.ColumnName = "OrderDate"
+			dataSourceColumnBinding1.GroupInterval = DevExpress.XtraPivotGrid.PivotGroupInterval.DateYear
+			Me.fieldOrderDate1.DataBinding = dataSourceColumnBinding1
 			Me.fieldOrderDate1.Name = "fieldOrderDate1"
-			Me.fieldOrderDate1.UnboundFieldName = "fieldOrderDate1"
 			' 
 			' fieldOrderDate
 			' 
 			Me.fieldOrderDate.Area = DevExpress.XtraPivotGrid.PivotArea.RowArea
 			Me.fieldOrderDate.AreaIndex = 1
 			Me.fieldOrderDate.Caption = "Month"
-			Me.fieldOrderDate.FieldName = "OrderDate"
-			Me.fieldOrderDate.GroupInterval = DevExpress.XtraPivotGrid.PivotGroupInterval.DateMonth
+			dataSourceColumnBinding2.ColumnName = "OrderDate"
+			dataSourceColumnBinding2.GroupInterval = DevExpress.XtraPivotGrid.PivotGroupInterval.DateMonth
+			Me.fieldOrderDate.DataBinding = dataSourceColumnBinding2
 			Me.fieldOrderDate.Name = "fieldOrderDate"
-			Me.fieldOrderDate.UnboundFieldName = "fieldOrderDate"
 			' 
 			' pivotGridControl1
 			' 
@@ -67,13 +72,12 @@
 			pivotGridGroup1.Caption = "OrderDateGroup"
 			pivotGridGroup1.Fields.Add(Me.fieldOrderDate1)
 			pivotGridGroup1.Fields.Add(Me.fieldOrderDate)
-			pivotGridGroup1.Hierarchy = Nothing
-			pivotGridGroup1.ShowNewValues = True
 			Me.pivotGridControl1.Groups.AddRange(New DevExpress.XtraPivotGrid.PivotGridGroup() { pivotGridGroup1})
 			Me.pivotGridControl1.Location = New System.Drawing.Point(0, 0)
 			Me.pivotGridControl1.LookAndFeel.SkinName = "Office 2010 Silver"
 			Me.pivotGridControl1.LookAndFeel.UseDefaultLookAndFeel = False
 			Me.pivotGridControl1.Name = "pivotGridControl1"
+			Me.pivotGridControl1.OptionsData.DataProcessingEngine = DevExpress.XtraPivotGrid.PivotDataProcessingEngine.Optimized
 			Me.pivotGridControl1.Size = New System.Drawing.Size(598, 310)
 			Me.pivotGridControl1.TabIndex = 0
 			' 
@@ -91,7 +95,8 @@
 			' 
 			Me.fieldProductName1.AreaIndex = 0
 			Me.fieldProductName1.Caption = "Product Name"
-			Me.fieldProductName1.FieldName = "ProductName"
+			dataSourceColumnBinding3.ColumnName = "ProductName"
+			Me.fieldProductName1.DataBinding = dataSourceColumnBinding3
 			Me.fieldProductName1.Name = "fieldProductName1"
 			' 
 			' fieldExtendedPrice1
@@ -99,7 +104,8 @@
 			Me.fieldExtendedPrice1.Area = DevExpress.XtraPivotGrid.PivotArea.DataArea
 			Me.fieldExtendedPrice1.AreaIndex = 0
 			Me.fieldExtendedPrice1.Caption = "Extended Price"
-			Me.fieldExtendedPrice1.FieldName = "Extended Price"
+			dataSourceColumnBinding4.ColumnName = "Extended Price"
+			Me.fieldExtendedPrice1.DataBinding = dataSourceColumnBinding4
 			Me.fieldExtendedPrice1.Name = "fieldExtendedPrice1"
 			' 
 			' fieldCategoryName1
@@ -107,7 +113,8 @@
 			Me.fieldCategoryName1.Area = DevExpress.XtraPivotGrid.PivotArea.ColumnArea
 			Me.fieldCategoryName1.AreaIndex = 0
 			Me.fieldCategoryName1.Caption = "Category Name"
-			Me.fieldCategoryName1.FieldName = "CategoryName"
+			dataSourceColumnBinding5.ColumnName = "CategoryName"
+			Me.fieldCategoryName1.DataBinding = dataSourceColumnBinding5
 			Me.fieldCategoryName1.Name = "fieldCategoryName1"
 			' 
 			' salesPersonTableAdapter
@@ -124,9 +131,9 @@
 			Me.Text = "Form1"
 'INSTANT VB NOTE: The following InitializeComponent event wireup was converted to a 'Handles' clause:
 'ORIGINAL LINE: this.Load += new System.EventHandler(this.Form1_Load);
-			DirectCast(Me.pivotGridControl1, System.ComponentModel.ISupportInitialize).EndInit()
-			DirectCast(Me.salesPersonBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-			DirectCast(Me.nwindDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+			CType(Me.pivotGridControl1, System.ComponentModel.ISupportInitialize).EndInit()
+			CType(Me.salesPersonBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+			CType(Me.nwindDataSet, System.ComponentModel.ISupportInitialize).EndInit()
 			Me.ResumeLayout(False)
 
 		End Sub
